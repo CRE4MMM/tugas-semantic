@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Iqbaal">
+    <meta name="keyword" content="Belajar HTML, Belajar Web, Semantic HTML5">
+    <meta name="description" content="Tugas HTML Lanjut">
+    <meta name="robots" content="index, follow">
+    <title>Semantic</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Times New Roman", Times, serif;
+            color: #000;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .navbar-table td {
+            border: solid 1px #999;
+            padding: 8px 12px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 14px;
+        }
+        .navbar-table .logo-cell {
+            text-align: left;
+            width: 80px;
+        }
+        .navbar-table .logo-cell img {
+            width: 70px;
+            height: auto;
+            display: block;
+        }
+        .navbar-table .admisi-cell a {
+            color: #1a73e8;
+            text-decoration: underline;
+        }
+        header.page-title {
+            border: solid 1px #999;
+            border-top: none;
+            padding: 12px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .content-layout {
+            display: flex;
+            width: 100%;
+            border: solid 1px #999;
+            border-top: none;
+            box-sizing: border-box;
+        }
+        main.blog-main {
+            flex: 7;
+            padding: 15px 20px;
+            border-right: solid 1px #999;
+            font-size: 13px;
+            box-sizing: border-box;
+        }
+        main.blog-main h2 {
+            font-size: 16px;
+            margin-top: 0;
+            margin-bottom: 4px;
+        }
+        main.blog-main p {
+            line-height: 1.4;
+        }
+        .video {
+            width: 100%;
+            height: 300px;
+            margin-top: 15px;
+        }
+        aside.sidebar {
+            flex: 3;
+            padding: 15px 20px;
+            font-size: 12px;
+            box-sizing: border-box;
+        }
+        aside.sidebar h3 {
+            font-size: 13px;
+            margin-top: 0;
+            margin-bottom: 6px;
+        }
+        aside.sidebar ul {
+            padding-left: 18px;
+            margin-top: 4px;
+            margin-bottom: 15px;
+        }
+        aside.sidebar li {
+            margin-bottom: 5px;
+        }
+        aside.sidebar a {
+            color: #1a73e8;
+            text-decoration: underline;
+        }
+        section.footer-info {
+            display: flex;
+            width: 100%;
+            border: solid 1px #999;
+            border-top: none;
+            box-sizing: border-box;
+        }
+        section.footer-info > div {
+            flex: 1;
+            padding: 15px 20px;
+            font-size: 12px;
+            box-sizing: border-box;
+        }
+        section.footer-info > div:not(:last-child) {
+            border-right: solid 1px #999;
+        }
+        section.footer-info h3 {
+            font-size: 13px;
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+        section.footer-info p {
+            line-height: 1.4;
+        }
+        section.footer-info ul {
+            padding-left: 18px;
+            margin: 6px 0;
+        }
+        footer.copyright {
+            border: solid 1px #999;
+            border-top: none;
+            padding: 8px 20px;
+            font-size: 10px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <table class="navbar-table">
+            <tr>
+                <td class="logo-cell">
+                    <img
+                        src="https://bis-jkt.telkomuniversity.ac.id/wp-content/uploads/2023/05/logo_ITTelkom_Surabaya-1.png"
+                        alt="Logo ITTelkom Surabaya"
+                    >
+                </td>
+                <td>Tentang Kami</td>
+                <td>Akademik</td>
+                <td>Dosen &amp; Staf</td>
+                <td>Kerja Sama</td>
+                <td>Blog</td>
+                <td class="admisi-cell">
+                    <a href="#">Admisi</a>
+                </td>
+            </tr>
+        </table>
+    </nav>
+
+    <header class="page-title">
+        Blog Sistem Informasi
+    </header>
+    
+    <div class="content-layout">
+        <main class="blog-main">
+            <article>
+                <h2>
+                    Dua Wisudawan Sistem Informasi Berhasil Meraih
+                    Predikat Cumlaude
+                </h2>
+                <p>
+                    Institut Teknologi Telkom Surabaya telah menggelar prosesi wisuda ke-1 secara luring di hotel Grand Dafam, Surabaya pada Sabtu (26/03/2022) kemarin. Prosesi wisuda ini merupakan yang pertama dilaksanakan sejak kampus ini berdiri di tahun 2018 lalu. Pada wisuda pertama ini, 16 wisudawan telah menyatakan lulus secara sah oleh Rektor ITTelkom Surabaya Bpk. Tri Anier Sardjono, S.T., M.T.
+                </p>
+                <p>
+                    Seluruh wisudawan merupakan mahasiswa yang berhasil lulus dengan masa studi 3,5 tahun. Dua diantaranya merupakan mahasiswa program studi Sistem Informasi. Mereka adalah Amalina Tri Setya Berliana dan Irene Dhyah Ayuwati. Keduanya berhasil menyandang gelar S.Kom dengan predikat cumlaude. Wisudawan dengan IPK tertinggi adalah Amalina Tri Setya Berliana yang tidak lain merupakan mahasiswa program studi Sistem Informasi dengan IPK 3,96
+                </p>
+                <p>
+                    Pada prosesi wisuda ini pula, Rektor ITTelkom Surabaya telah menyampaikan
+                    pesannya dengan penuh sukacita. Beliau berpesan bagi seluruh wisudawan agar
+                    terus mengembangkan diri sehingga dapat mengambil peran di era transformasi
+                    digital yang disruptif ini. Acara wisuda ini dapat disaksikan melalui kanal
+                    YouTube ITTelkom Surabaya:
+                    <a href="https://www.youtube.com/watch?v=bboTVfT1NWY" target="_blank">
+                        YouTube ITTelkom Surabaya
+                    </a>
+                </p>
+                <iframe
+                    class="video"
+                    src="https://www.youtube.com/embed/bboTVfT1NWY"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </article>
+        </main>
+        <aside class="sidebar">
+            <h3>Artikel Terbaru</h3>
+            <ul>
+                <li>
+                    <a href="#">
+                        Dua Wisudawan Sistem Informasi Berhasil Meraih
+                        Predikat Cumlaude
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Dua Mahasiswa Sistem Informasi Raih Penghargaan
+                        di ajang Putra Putri Jatim 2021
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        PLAYBOX hadir kembali !! Segera daftarkan dirimu
+                        di PLAYBOX Season II
+                    </a>
+                </li>
+            </ul>
+            <h3>Artikel Terpopuler</h3>
+            <ul>
+                <li>
+                    <a href="#">
+                        Dua Wisudawan Sistem Informasi Berhasil Meraih
+                        Predikat Cumlaude
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Dua Mahasiswa Sistem Informasi Raih Penghargaan
+                        di ajang Putra Putri Jatim 2021
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        PLAYBOX hadir kembali !! Segera daftarkan dirimu
+                        di PLAYBOX Season II
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+
+    <section class="footer-info">
+        <div>
+            <h3>Sistem Informasi</h3>
+            <p>
+                Situs resmi Program Studi Sistem Informasi Institut Teknologi
+                Telkom Surabaya. Website ini diperuntukkan sebagai media
+                komunikasi internal &amp; eksternal bagi mahasiswa, dosen,
+                dan karyawan.
+            </p>
+            <p>
+                Program Studi Sistem Informasi sudah ada sejak berdirinya
+                Institut Teknologi Telkom Surabaya, berdasarkan Keputusan
+                Menteri Riset, Teknologi, dan Pendidikan Tinggi no. 733 /
+                KPT / I / 2018.
+            </p>
+        </div>
+
+        <div>
+            <h3>Tautan Penting</h3>
+            <ul>
+                <li>Mahasiswa &amp; Alumni</li>
+                <li>Kerja Sama</li>
+                <li>Proyek</li>
+            </ul>
+            <h3>Tautan Bermanfaat</h3>
+            <ul>
+                <li>Telkom Indonesia</li>
+                <li>Yayasan Pendidikan Telkom</li>
+                <li>ITTelkom Surabaya</li>
+                <li>Website SMB</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Info Kontak</h3>
+            <p>
+                <strong>Alamat:</strong>
+                Jl. Ketintang No.156, Surabaya, Jawa Timur 60231
+                <br>
+                <strong>Telepon:</strong>
+                +62 31 8280800
+                <br>
+                <strong>Email:</strong>
+                is@ittelkom-sby.ac.id
+            </p>
+            <h3>Media Sosial</h3>
+            <ul>
+                <li>Instagram</li>
+            </ul>
+        </div>
+    </section>
+    <footer class="copyright">
+        Copyright &copy; 2026 Information Systems
+        <br>
+        Build with &hearts; by CODER Team
+    </footer>
+</body>
+</html>
